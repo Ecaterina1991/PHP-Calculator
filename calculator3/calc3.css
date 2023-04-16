@@ -1,0 +1,119 @@
+/* intrebare1 - se foloseste sau nu paragraf, se pun sau nu intre ghilimele variabilele numerice din valorile inputului. NU SE FOLOSESTE PARAGRAF. Am gresit cand nu am pus intre ghilimele valoarea pentru input number. */
+/* default {"Alegeti un operator pentru calcul"} sintaxa corecta?  -----------nu-----------aici sintaxa corecta:
+ default:
+      echo "<p>Alegeti un operator pentru calcul</p>"; */
+/* greseala: am scris $_SERVER[METHOD_REQUEST] in loc de $_SERVER[REQUEST_METHOD] */
+
+/* greseala: am trecut in paranteze variabila op intre ghilimele in loc de sintaxa corecta $op 
+greseala: am folosit paranteze rotunde la valorile de dupa case din instructiune switch in loc sa las ghilimele simple
+
+de verificat daca este obligatoriu method post sa fie cu litere mici
+
+de verificat daca in aceasta sintaxa <input type="number" name="numar4" id="numar4" value="<?php echo $numar4; ?>">  este obligatoriul ultimul spatiu inainte d etagul d einchidere php*/
+
+/* background color: background-color: #97d697; */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1.4em;
+  padding-bottom: 2em;
+  margin: 0 auto;
+}
+
+.form-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  background-color: #97d697;
+  width: 31.25em;
+  padding: 2em;
+  border: 1px solid gray;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgb(0, 0, 0, 0.5);
+}
+
+input[type="number"] {
+  padding: 0.5em;
+  width: 34em;
+  border: none;
+  border-radius: 5px;
+  margin: 0.5em;
+  box-shadow: 0 0 10px rgb(0, 0, 0, 0.5);
+}
+
+label {
+  color: rgb(6, 29, 6);
+  font-weight: 700;
+}
+
+.submit {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+}
+
+input[type="submit"] {
+  font-size: 0.9em;
+  padding: 0.4em;
+  box-shadow: 0 0 10px rgb(0, 0, 0, 0.5);
+  border-radius: 5px;
+  border: none;
+  margin: 0 auto;
+}
+
+.div-php {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  margin-top: 1em;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  border: none;
+  padding: 0.5em;
+  margin: 0.5em 9em;
+  color: rgb(6, 29, 6);
+  font-weight: 700;
+}
+
+p {
+  font-size: 1.2em;
+  font-weight: 700;
+  box-shadow: 0 0 10px rgb(0, 0, 0, 0.5);
+  border: none;
+  border-radius: 5px;
+  padding: 1.4em;
+  background-color: #97d697;
+}
+
+.footer-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1em;
+}
+
+footer p {
+  max-width: 40em;
+  font-size: 0.8em;
+  background-color: #97d697;
+  color: darkgreen;
+}
+
+.name {
+  font-weight: 600;
+  color: #042904;
+}
