@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="calc3.css" type="text/CSS">
+  <link rel="stylesheet" href="calc3.css" type="text/css">
   <meta charset="UTF-8">
   <title>Calculator 3</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Anuphan:wght@300;400;500;600;700&family=Source+Sans+Pro:wght@200;400;600;900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anuphan:wght@300;400;500;600;700&family=Source+Sans+Pro:wght@200;400;600;900&  display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -29,13 +29,9 @@
     <br>
     <div class="submit">
     <input type="submit" name="op" value="Adunare">
-    
     <input type="submit" name="op" value="Scadere">
-    
     <input type="submit" name="op" value="Inmultire">
-    
     <input type="submit" name="op" value="Impartire">
-  
     <input type="submit" name="op" value="Rest">
   </div>
   </form>
@@ -44,44 +40,46 @@
 <div id="div-php">
 <?php 
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
-  $numar1 = $_POST['numar1'];
-  $numar2 = $_POST['numar2'];
-  $numar3 = $_POST['numar3'];
-  $numar4 = $_POST['numar4'];
-  $op = $_POST['op'];
-
-  switch($op) {
-    case 'Adunare': 
-      $result = $numar1 + $numar2;
-      echo "<p>Rezultat adunare: " . $result . "</p>";
-      break;
-    case 'Scadere': 
-      $result = $numar4 - $numar3;
-      echo "<p>Rezultat scădere: " . $result . "</p>";
-      break;
-    case 'Inmultire': 
-      $result = $numar4 * $numar2;
-      echo "<p>Rezultat înmulțire: " . $result . "</p>";
-      break;
-    case 'Impartire': 
-      $result = $numar4 / $numar3;
-      echo "<p>Rezultat împărțire: " . $result . "</p>";
-      break;
-    case 'Rest': 
-      $result = $numar1 % $numar2;
-      echo "<p>Rezultat rest: " . $result . "</p>";
-      break;
-      default:
-      echo "<p>Alegeți o operație pentru calcul.</p>";
-  }
-}
+     $numar1 = $_POST['numar1'];
+     $numar2 = $_POST['numar2'];
+     $numar3 = $_POST['numar3'];
+     $numar4 = $_POST['numar4'];
+     $op = $_POST['op'];
+   
+     switch ($op) {
+          case 'Adunare': 
+            $result = $numar1 + $numar2;
+            echo "<p>Rezultat adunare: " . $result . "</p>";
+            break;
+          case 'Scadere': 
+            $result = $numar4 - $numar3;
+            echo "<p>Rezultat scădere: " . $result . "</p>";
+            break;
+          case 'Inmultire': 
+            $result = $numar4 * $numar2;
+            echo "<p>Rezultat înmulțire: " . $result . "</p>";
+            break;
+          case 'Impartire': 
+            $result = $numar4 / $numar3;
+            echo "<p>Rezultat împărțire: " . $result . "</p>";
+            break;
+          case 'Rest': 
+            $result = $numar1 % $numar2;
+            echo "<p>Rezultat rest: " . $result . "</p>";
+            break;
+            default:
+            echo "<p>Alegeți o operație pentru calcul.</p>";
+                }
+              }
 ?>
-</div>
 
 <div class=footer-wrapper>
 <footer>
     <p>Developed By <span class="name">Ecaterina Ștefan</span> | &copy;<?php echo date("Y"); ?> All Rights Reserved <span class="name">"PHP Academy"</span></p>
   </footer>
 </div>
+</div>
 </body>
+
+
 </html>
