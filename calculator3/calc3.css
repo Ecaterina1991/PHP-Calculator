@@ -1,16 +1,3 @@
-/* intrebare1 - se foloseste sau nu paragraf, se pun sau nu intre ghilimele variabilele numerice din valorile inputului. NU SE FOLOSESTE PARAGRAF. Am gresit cand nu am pus intre ghilimele valoarea pentru input number. */
-/* default {"Alegeti un operator pentru calcul"} sintaxa corecta?  -----------nu-----------aici sintaxa corecta:
- default:
-      echo "<p>Alegeti un operator pentru calcul</p>"; */
-/* greseala: am scris $_SERVER[METHOD_REQUEST] in loc de $_SERVER[REQUEST_METHOD] */
-
-/* greseala: am trecut in paranteze variabila op intre ghilimele in loc de sintaxa corecta $op 
-greseala: am folosit paranteze rotunde la valorile de dupa case din instructiune switch in loc sa las ghilimele simple
-
-de verificat daca este obligatoriu method post sa fie cu litere mici
-
-de verificat daca in aceasta sintaxa <input type="number" name="numar4" id="numar4" value="<?php echo $numar4; ?>">  este obligatoriul ultimul spatiu inainte d etagul d einchidere php*/
-
 /* background color: background-color: #97d697; */
 
 * {
@@ -23,6 +10,7 @@ body {
   font-size: 1.4em;
   padding-bottom: 2em;
   margin: 0 auto;
+  font-family: "Anuphan", sans-serif;
 }
 
 .form-wrapper {
@@ -69,7 +57,7 @@ input[type="submit"] {
   margin: 0 auto;
 }
 
-.div-php {
+#div-php {
   display: flex;
   justify-content: center;
   align-items: center;

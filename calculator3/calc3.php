@@ -4,6 +4,9 @@
   <link rel="stylesheet" href="calc3.css" type="text/CSS">
   <meta charset="UTF-8">
   <title>Calculator 3</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anuphan:wght@300;400;500;600;700&family=Source+Sans+Pro:wght@200;400;600;900&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -12,16 +15,16 @@
   <div class="form-wrapper">
   <form method="post">
     <label for="numar1">Număr 1:</label>
-    <input type="number" name="numar1" id="numar1" value="<?php echo $numar1; ?>">
+    <input type="number" name="numar1" id="numar1" value="<?php echo $numar1;?>">
     <br>
     <label for="numar2">Număr 2:</label>
-    <input type="number" name="numar2" id="numar2" value="<?php echo $numar2; ?>">
+    <input type="number" name="numar2" id="numar2" value="<?php echo $numar2;?>">
     <br>
     <label for="numar3">Număr 3:</label>
-    <input type="number" name="numar3" id="numar3" value="<?php echo $numar3; ?>">
+    <input type="number" name="numar3" id="numar3" value="<?php echo $numar3;?>">
     <br>
     <label for="numar4">Număr 4:</label>
-    <input type="number" name="numar4" id="numar4" value="<?php echo $numar4; ?>">
+    <input type="number" name="numar4" id="numar4" value="<?php echo $numar4;?>">
     <br>
     <br>
     <div class="submit">
@@ -38,7 +41,7 @@
   </form>
 </div>
 
-<div class="div-php">
+<div id="div-php">
 <?php 
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
   $numar1 = $_POST['numar1'];
