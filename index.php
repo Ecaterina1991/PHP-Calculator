@@ -28,13 +28,16 @@
 		<input type="submit" value="Impartire" name="op" />
 		<input type="submit" value="Rest" name="op" />
 	</form>
+
 	<?php
 		if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 			$numar1 = $_POST['numar1'];
 			$numar2 = $_POST['numar2'];
 			$numar3 = $_POST['numar3'];
 			$numar4 = $_POST['numar4'];
+			
 			$op = $_POST['op'];
+
 			switch ($op) {
 				case 'Adunare':
 					$result = $numar1 + $numar2;

@@ -36,17 +36,23 @@ adica + - / * sau ridicare la putere **
 Explicatii PHP cod
 
 	<?php
-		if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+		if ($_SERVER['REQUEST_METHOD'] === 'POST') { // Aceasta este o condiție if care verifică dacă metoda HTTP utilizată pentru a accesa pagina este POST. Dacă este, atunci codul din interiorul blocului if se va executa.
+
+			$_SERVER['REQUEST_METHOD'] - este o variabila globala
 			$numar1 = $_POST['numar1'];
-
-      // Aceasta este o condiție if care verifică dacă metoda HTTP utilizată pentru a accesa pagina este POST. Dacă este, atunci codul din interiorul blocului if se va executa.
-
 			$numar2 = $_POST['numar2'];
 			$numar3 = $_POST['numar3'];
 			$numar4 = $_POST['numar4'];
 			$op = $_POST['op'];
 
       // Aceste linii de cod preiau valorile introduse de utilizator în formularul HTML, care au fost trimise prin metoda POST. Variabilele numar1, numar2, numar3, numar4 și op vor fi utilizate mai târziu pentru a efectua calculele și pentru a afișa rezultatul.
+			Spre exemplu, linia de cod $numar1 = $_POST['numar1']; în PHP este utilizată pentru a prelua valoarea introdusă de utilizator într-un formular web și de a o atribui unei variabile numite $numar1.
+
+      Într-un formular web, utilizatorul poate introduce informații în câmpuri de introducere text, câmpuri       selectabile sau alte elemente. Atunci când formularul este trimis către serverul web, informațiile       introduse de utilizator sunt trimise prin intermediul metodei POST către scriptul PHP care procesează       aceste date.
+      
+      Variabila globală $_POST este utilizată pentru a accesa datele trimise prin intermediul metodei POST. În       cazul nostru, $_POST['numar1'] reprezintă valoarea introdusă de utilizator într-un câmp cu numele numar1.       Această valoare este apoi atribuită variabilei $numar1 utilizând operatorul de atribuire =.
+      
+      După această linie de cod, variabila $numar1 va conține valoarea introdusă de utilizator în câmpul numar1       din formularul web, iar această valoare poate fi ulterior folosită în cadrul scriptului PHP pentru a       efectua diverse operații.
 
 			switch ($op) {
 				case 'Adunare':
